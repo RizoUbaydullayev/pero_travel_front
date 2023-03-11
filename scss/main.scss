@@ -139,33 +139,165 @@ a {
         position: absolute;
         width: 100%;
         bottom: -100px;
-       .header_slider {
-        overflow: hidden;
-        .header_slider_wrap {
-            display: flex;
-            .page {
-                flex-shrink: 0;
-                width: 360px;
-                height: 227px;
-                position: relative;
-                .page_content {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 10px;
-                    display: flex;
-                    background-size: cover;
-                    background-image: url("../img/header_slider_img_1.jpg");
-                    .play_video_icon {
-                        cursor: pointer;
-                        position: absolute;
-                        right: 50%;
-                        bottom: 50%;
-                        transform: translate(50%, 50%);
+        .header_slider {
+            overflow: hidden;
+            .header_slider_wrap {
+                display: flex;
+                .page {
+                    flex-shrink: 0;
+                    width: 360px;
+                    height: 227px;
+                    position: relative;
+                    .page_content {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                        display: flex;
+                        background-size: cover;
+                        background-image: url("../img/header_slider_img_1.jpg");
+                        .play_video_icon {
+                            cursor: pointer;
+                            position: absolute;
+                            right: 50%;
+                            bottom: 50%;
+                            transform: translate(50%, 50%);
+                        }
                     }
                 }
             }
         }
-    } 
     }
-    
+}
+
+/*=========================  popular_excursions  ================================================*/
+
+.popular_excursions {
+    padding-bottom: 150px;
+    position: relative;
+    margin-top: 263px;
+    .popular_excursions_wrap {
+        margin-bottom: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .popular_excursions_title {
+            font-family: "Montserrat-Bold";
+            font-size: 24px;
+            color: #0499dd;
+        }
+        .see_all {
+            .see_all_link {
+                font-family: "Montserrat-Medium";
+                font-size: 12px;
+                text-decoration-line: underline;
+            }
+        }
+    }
+    .popular_excursions_slider {
+        padding-bottom: 100px;
+        position: relative;
+        overflow: hidden;
+        .popular_excursions_slider_wrap {
+            display: flex;
+            .page {
+                border-radius: 10px;
+                width: 360px;
+                height: 497px;
+                flex-shrink: 0;
+                background-image: url("../img/popular_excursions_slide_1.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                .page_content {
+                    padding: 0 16px 42px 16px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    color: #fff;
+                    .type_of_excursion {
+                        margin-bottom: 2px;
+                    }
+                    .tour_name {
+                        margin-bottom: 14px;
+                        font-size: 14px;
+                        font-family: "Montserrat-Bold";
+                        color: #FFC700;
+                    }
+                    .duration_and_cost {
+                        margin-bottom: 20px;
+                        display: flex;
+                        gap: 13px;
+                        .duration {
+                            position: relative;
+                            padding-left: 23px;
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                width: 18px;
+                                height: 18px;
+                                left: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                background-size: cover;
+                                background-image: url("../img/duration.svg");
+                            }
+                        }
+                        .cost {
+                            position: relative;
+                            padding-left: 27px;
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                width: 22px;
+                                height: 22px;
+                                left: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                background-size: cover;
+                                background-image: url("../img/cost_icon.svg");
+                            }
+                        }
+                    }
+                    .tour_description {
+                        margin-bottom: 20px;
+                    }
+                    .more {
+                        .more_button {
+                            position: relative;
+                            font-family: "Montserrat-Bold";
+                            font-size: 14px;
+                            height: 50px;
+                            width: 230px;
+                            background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+                            border-radius: 60px;
+                            border: none;
+                            color: #fff; 
+                        }
+                    }
+                }
+            }
+        }
+        .container_for_arrows {
+            height: 50px;
+            position: relative;
+            max-width: 1120px;
+            margin: 0 auto;
+            .arrow {
+                top: 250%;
+                transform: translateY(-50%);
+            }
+            .swiper-button-next {
+                left: 80px;
+            }
+        }
+
+        .progress_line {
+            left: 100%;
+            transform: translateX(-100%);
+            width: 70%;
+            position: relative;
+            margin-top: 50px;
+        }
+    }
 }
