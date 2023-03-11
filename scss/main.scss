@@ -172,7 +172,7 @@ a {
 /*=========================  popular_excursions  ================================================*/
 
 .popular_excursions {
-    padding-bottom: 150px;
+    // padding-bottom: 150px;
     position: relative;
     margin-top: 263px;
     .popular_excursions_wrap {
@@ -222,7 +222,7 @@ a {
                         margin-bottom: 14px;
                         font-size: 14px;
                         font-family: "Montserrat-Bold";
-                        color: #FFC700;
+                        color: #ffc700;
                     }
                     .duration_and_cost {
                         margin-bottom: 20px;
@@ -272,7 +272,7 @@ a {
                             background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
                             border-radius: 60px;
                             border: none;
-                            color: #fff; 
+                            color: #fff;
                         }
                     }
                 }
@@ -298,6 +298,55 @@ a {
             width: 70%;
             position: relative;
             margin-top: 50px;
+        }
+    }
+}
+
+/*=========================  about_us  ================================================*/
+
+.about_us {
+    margin-top: 60px;
+    position: relative;
+    margin-bottom: 190px;
+
+    .about_us_img {
+        width: 75%;
+        height: 998px;
+        background-image: url("../img/about_us_bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .about_us_main {
+        width: 1120px;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+        display: flex;
+        justify-content: flex-end;
+
+        .about_us_main_wrap {
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            width: 550px;
+            height: 450px;
+            background-color: rgb(255, 255, 255);
+            padding: 60px 85px;
+            .about_us_main-title {
+                font-size: 24px;
+                font-family: "Montserrat-Bold";
+                color: #0499DD;
+            }
+            .about_us_main-content {
+                font-size: 14px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                
+            }
         }
     }
 }
