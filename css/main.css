@@ -131,6 +131,7 @@ a {
   gap: 15px;
 }
 .header .slider {
+  user-select: none;
   position: absolute;
   width: 100%;
   bottom: -100px;
@@ -185,6 +186,7 @@ a {
   text-decoration-line: underline;
 }
 .popular_excursions .popular_excursions_slider {
+  user-select: none;
   padding-bottom: 100px;
   position: relative;
   overflow: hidden;
@@ -291,9 +293,9 @@ a {
 
 /*=========================  about_us  ================================================*/
 .about_us {
+  display: none;
   margin-top: 60px;
   position: relative;
-  margin-bottom: 190px;
 }
 .about_us .about_us_img {
   width: 75%;
@@ -325,11 +327,68 @@ a {
 .about_us .about_us_main .about_us_main_wrap .about_us_main-title {
   font-size: 24px;
   font-family: "Montserrat-Bold";
-  color: #0499DD;
+  color: #0499dd;
 }
 .about_us .about_us_main .about_us_main_wrap .about_us_main-content {
   font-size: 14px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+/*=========================  types_of_excursions  ================================================*/
+.types_of_excursions {
+  margin-top: 150px;
+}
+.types_of_excursions .types_of_excursions-title {
+  margin-bottom: 90px;
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+  color: #0499dd;
+}
+.types_of_excursions .types_of_excursions-main {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 20px;
+}
+.types_of_excursions .types_of_excursions-main .excursion {
+  width: calc(50% - 10px);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.types_of_excursions .types_of_excursions-main .excursion .excursion_icon {
+  flex-shrink: 0;
+}
+.types_of_excursions .types_of_excursions-main .excursion .excursion_info .name {
+  color: #0499dd;
+  font-family: "Montserrat-Bold";
+  font-size: 18px;
+}
+.types_of_excursions .types_of_excursions-main .excursion .excursion_info .description {
+  font-size: 14px;
+  line-height: 17px;
+}
+.types_of_excursions .prompt_and_button {
+  text-align: center;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.types_of_excursions .prompt_and_button .prompt {
+  width: 550px;
+  font-size: 14px;
+}
+.types_of_excursions .prompt_and_button .button_to_excursions {
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  height: 50px;
+  width: 230px;
+  background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+  border-radius: 60px;
+  border: none;
+  color: #fff;
+  margin-top: 20px;
 }/*# sourceMappingURL=main.css.map */
