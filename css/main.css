@@ -391,4 +391,100 @@ a {
   border: none;
   color: #fff;
   margin-top: 20px;
+}
+
+/*=========================  gallery  ================================================*/
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.gallery {
+  margin-top: 150px;
+}
+.gallery .gallery_top {
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery .gallery_top .gallery_title {
+  font-size: 24px;
+  font-family: "Montserrat-Bold";
+  color: #0499dd;
+}
+.gallery .gallery_top .gallery_see_all {
+  text-decoration: underline;
+}
+.gallery .gallery_images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(126px, 1fr));
+  grid-auto-rows: 110px;
+  grid-auto-flow: dense;
+  grid-gap: 16px;
+}
+.gallery .gallery_images .gallery_image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.gallery .gallery_images .gallery_image:hover {
+  -webkit-animation: pulsate-bck 0.5s ease-in-out both;
+  animation: pulsate-bck 0.5s ease-in-out both;
+}
+.gallery .gallery_images .gallery_image:nth-child(1) {
+  grid-row: span 2;
+  grid-column: span 3;
+}
+.gallery .gallery_images .gallery_image:nth-child(2) {
+  grid-row: span 4;
+  grid-column: span 2;
+}
+.gallery .gallery_images .gallery_image:nth-child(3) {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.gallery .gallery_images .gallery_image:nth-child(4) {
+  grid-row: span 2;
+  grid-column: span 1;
+}
+.gallery .gallery_images .gallery_image:nth-child(5) {
+  grid-row: span 2;
+  grid-column: span 1;
+}
+.gallery .gallery_images .gallery_image:nth-child(6) {
+  grid-row: span 1;
+  grid-column: span 2;
+}
+.gallery .gallery_images .gallery_image:nth-child(7) {
+  grid-row: span 2;
+  grid-column: span 3;
+}
+.gallery .gallery_images .gallery_image:nth-child(8) {
+  grid-row: span 1;
+  grid-column: span 2;
 }/*# sourceMappingURL=main.css.map */
