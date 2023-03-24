@@ -57,4 +57,24 @@ document.addEventListener("click", event => {
 	}
 })
 
+/*=========================  reviews  ================================================*/
+const reviews_slider = new Swiper('.reviews_slider', {
+	wrapperClass: "reviews_slider_wrap",
+	slideClass: "page",
+	slidesPerView: 2.3,
+	// spaceBetween: 20,
+	freeMode: {
+		enabled: true,
+		sticky: false,
+	},
+	pagination: {
+		el: ".progress_line",
+		type: "progressbar",
+		progressbarOpposite: false,
+	},
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+})
 
