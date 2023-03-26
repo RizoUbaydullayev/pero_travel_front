@@ -94,7 +94,6 @@ a {
                 }
                 .title_middle {
                     transform: translateY(-57%);
-                    right: 31px;
                     position: absolute;
                     font-size: 64px;
                     font-family: "Mr_kindlyjasmineg";
@@ -828,17 +827,21 @@ a {
 }
 
 /*=========================  Адаптив  ================================================*/
-@media screen and (max-width: 1620px) {
+@media screen and (min-width: 1921px) {
+    
+}
+
+@media screen and (min-width: 1601px) and (max-width:1920px) {
+    
+}
+
+@media screen and (min-width: 1280px) and (max-width:1600px) {
     .header {
-        position: relative;
         padding-top: 26px;
-        // padding-bottom: 124px;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/header_bg.png);
-        backdrop-filter: blur(0.5px);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left top;
-        min-height: 1052px;
+        min-height: 900px;
         flex-wrap: wrap;
         .header_top {
             display: flex;
@@ -863,7 +866,7 @@ a {
             justify-content: space-between;
             // flex-wrap: wrap;
             gap: 50px;
-
+    
             .main_header {
                 .main_header-title {
                     position: relative;
@@ -932,8 +935,8 @@ a {
                     display: flex;
                     .page {
                         flex-shrink: 0;
-                        width: 360px;
-                        height: 227px;
+                        width: 300px;
+                        height: 180px;
                         position: relative;
                         .page_content {
                             width: 100%;
@@ -954,5 +957,759 @@ a {
                 }
             }
         }
+    } 
+}
+
+@media screen and (min-width: 1024px) and (max-width:1279px) {
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+    .header {
+        padding-top: 26px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top;
+        min-height: 800px;
+        flex-wrap: wrap;
+        .header_top {
+            display: flex;
+            justify-content: space-between;
+            .menu {
+                color: #fff;
+                font-family: "Montserrat-Medium";
+                font-size: 14px;
+                ul {
+                    display: flex;
+                    gap: 20px;
+                    li {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .main {
+            margin-top: 180px;
+            margin-bottom: 248px;
+            display: flex;
+            justify-content: space-between;
+            // flex-wrap: wrap;
+            gap: 50px;
+    
+            .main_header {
+                .main_header-title {
+                    position: relative;
+                    .title_top {
+                        color: #fff;
+                        font-size: 72px;
+                        font-family: "Montserrat-Bold";
+                    }
+                    .title_middle {
+                        transform: translateY(-57%);
+                        right: 31px;
+                        position: absolute;
+                        font-size: 64px;
+                        font-family: "Mr_kindlyjasmineg";
+                        text-align: right;
+                        color: #ffc700;
+                    }
+                    .title_buttom {
+                        font-size: 96px;
+                        font-family: "Montserrat-Black", sans-serif;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-text-stroke: 2px #fff;
+                    }
+                }
+                .to_excursions {
+                    margin-top: 100px;
+                    .button_to_excursions {
+                        position: relative;
+                        font-family: "Montserrat-Bold";
+                        font-size: 14px;
+                        height: 50px;
+                        width: 230px;
+                        background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+                        border-radius: 60px;
+                        border: none;
+                        color: #fff;
+                        &::after {
+                            top: 50%;
+                            right: 40px;
+                            content: "";
+                            position: absolute;
+                            width: 15px;
+                            height: 8px;
+                            background-image: url(../img/arrow.svg);
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+            .social_buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+        .slider {
+            user-select: none;
+            position: absolute;
+            width: 100%;
+            bottom: -100px;
+            .header_slider {
+                overflow: hidden;
+                .header_slider_wrap {
+                    display: flex;
+                    .page {
+                        flex-shrink: 0;
+                        width: 300px;
+                        height: 180px;
+                        position: relative;
+                        .page_content {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                            display: flex;
+                            background-size: cover;
+                            background-image: url("../img/header_slider_img_1.jpg");
+                            .play_video_icon {
+                                cursor: pointer;
+                                position: absolute;
+                                right: 50%;
+                                bottom: 50%;
+                                transform: translate(50%, 50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+    .header {
+        padding-top: 26px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top;
+        min-height: 900px;
+        flex-wrap: wrap;
+        .header_top {
+            display: flex;
+            justify-content: space-between;
+            .menu {
+                color: #fff;
+                font-family: "Montserrat-Medium";
+                font-size: 14px;
+                ul {
+                    display: flex;
+                    gap: 20px;
+                    li {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .main {
+            margin-top: 180px;
+            margin-bottom: 248px;
+            display: flex;
+            justify-content: space-between;
+            // flex-wrap: wrap;
+            gap: 50px;
+    
+            .main_header {
+                .main_header-title {
+                    position: relative;
+                    .title_top {
+                        color: #fff;
+                        font-size: 48px;
+                        font-family: "Montserrat-Bold";
+                    }
+                    .title_middle {
+                        transform: translateY(-57%);
+                        left: 369px;
+                        // right: 231px;
+                        position: absolute;
+                        font-size: 48px;
+                        font-family: "Mr_kindlyjasmineg";
+                        text-align: right;
+                        color: #ffc700;
+                    }
+                    .title_buttom {
+                        font-size: 96px;
+                        font-family: "Montserrat-Black", sans-serif;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-text-stroke: 2px #fff;
+                    }
+                }
+                .to_excursions {
+                    margin-top: 100px;
+                    .button_to_excursions {
+                        position: relative;
+                        font-family: "Montserrat-Bold";
+                        font-size: 14px;
+                        height: 50px;
+                        width: 230px;
+                        background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+                        border-radius: 60px;
+                        border: none;
+                        color: #fff;
+                        &::after {
+                            top: 50%;
+                            right: 40px;
+                            content: "";
+                            position: absolute;
+                            width: 15px;
+                            height: 8px;
+                            background-image: url(../img/arrow.svg);
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+            .social_buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+        .slider {
+            user-select: none;
+            position: absolute;
+            width: 100%;
+            bottom: -100px;
+            .header_slider {
+                overflow: hidden;
+                .header_slider_wrap {
+                    display: flex;
+                    .page {
+                        flex-shrink: 0;
+                        width: 300px;
+                        height: 180px;
+                        position: relative;
+                        .page_content {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                            display: flex;
+                            background-size: cover;
+                            background-image: url("../img/header_slider_img_1.jpg");
+                            .play_video_icon {
+                                cursor: pointer;
+                                position: absolute;
+                                right: 50%;
+                                bottom: 50%;
+                                transform: translate(50%, 50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+
+    .popular_excursions {
+        .popular_excursions_wrap {
+            .popular_excursions_title {
+
+            }
+            .see_all {
+
+            }
+        }
+        .popular_excursions_slider {
+            .popular_excursions_slider_wrap {
+                .page {
+                    // height: 430px;
+                    .page_content {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
     }
 }
+
+@media screen and (min-width: 481px) and (max-width:767px) {
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .header {
+        padding-top: 26px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top;
+        min-height: 800px;
+        flex-wrap: wrap;
+        .header_top {
+            display: flex;
+            justify-content: space-between;
+            .menu {
+                color: #fff;
+                font-family: "Montserrat-Medium";
+                font-size: 14px;
+                ul {
+                    display: flex;
+                    gap: 20px;
+                    li {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .main {
+            margin-top: 180px;
+            margin-bottom: 248px;
+            display: flex;
+            justify-content: space-between;
+            // flex-wrap: wrap;
+            gap: 20px;
+    
+            .main_header {
+                .main_header-title {
+                    position: relative;
+                    .title_top {
+                        color: #fff;
+                        font-size: 36px;
+                        font-family: "Montserrat-Bold";
+                    }
+                    .title_middle {
+                        transform: translateY(-57%);
+                        left: 260px;
+                        position: absolute;
+                        font-size: 36px;
+                        font-family: "Mr_kindlyjasmineg";
+                        text-align: right;
+                        color: #ffc700;
+                    }
+                    .title_buttom {
+                        font-size: 56px;
+                        font-family: "Montserrat-Black", sans-serif;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-text-stroke: 2px #fff;
+                    }
+                }
+                .to_excursions {
+                    margin-top: 100px;
+                    .button_to_excursions {
+                        position: relative;
+                        font-family: "Montserrat-Bold";
+                        font-size: 14px;
+                        height: 50px;
+                        width: 230px;
+                        background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+                        border-radius: 60px;
+                        border: none;
+                        color: #fff;
+                        &::after {
+                            top: 50%;
+                            right: 40px;
+                            content: "";
+                            position: absolute;
+                            width: 15px;
+                            height: 8px;
+                            background-image: url(../img/arrow.svg);
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+            .social_buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+        .slider {
+            user-select: none;
+            position: absolute;
+            width: 100%;
+            bottom: -100px;
+            .header_slider {
+                overflow: hidden;
+                .header_slider_wrap {
+                    display: flex;
+                    .page {
+                        flex-shrink: 0;
+                        width: 300px;
+                        height: 180px;
+                        position: relative;
+                        .page_content {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                            display: flex;
+                            background-size: cover;
+                            background-image: url("../img/header_slider_img_1.jpg");
+                            .play_video_icon {
+                                cursor: pointer;
+                                position: absolute;
+                                right: 50%;
+                                bottom: 50%;
+                                transform: translate(50%, 50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+
+    .popular_excursions {
+        .popular_excursions_wrap {
+            .popular_excursions_title {
+
+            }
+            .see_all {
+
+            }
+        }
+        .popular_excursions_slider {
+            .popular_excursions_slider_wrap {
+                .page {
+                    // height: 430px;
+                    .page_content {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width:480px) {
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .header {
+        padding-top: 26px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top;
+        min-height: 800px;
+        flex-wrap: wrap;
+        .header_top {
+            display: flex;
+            justify-content: space-between;
+            .menu {
+                color: #fff;
+                font-family: "Montserrat-Medium";
+                font-size: 14px;
+                ul {
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    li {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .main {
+            margin-top: 180px;
+            margin-bottom: 248px;
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+
+            gap: 20px;
+    
+            .main_header {
+                flex-basis: 100%;
+                .main_header-title {
+                    position: relative;
+                    .title_top {
+                        color: #fff;
+                        font-size: 28px;
+                        font-family: "Montserrat-Bold";
+                    }
+                    .title_middle {
+                        transform: translateY(-57%);
+                        left: 206px;
+                        position: absolute;
+                        font-size: 28px;
+                        font-family: "Mr_kindlyjasmineg";
+                        text-align: right;
+                        color: #ffc700;
+                    }
+                    .title_buttom {
+                        font-size: 48px;
+                        font-family: "Montserrat-Black", sans-serif;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-text-stroke: 1px #fff;
+                    }
+                }
+                .to_excursions {
+                    margin-top: 100px;
+                    .button_to_excursions {
+                        position: relative;
+                        font-family: "Montserrat-Bold";
+                        font-size: 14px;
+                        height: 50px;
+                        width: 230px;
+                        background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+                        border-radius: 60px;
+                        border: none;
+                        color: #fff;
+                        &::after {
+                            top: 50%;
+                            right: 40px;
+                            content: "";
+                            position: absolute;
+                            width: 15px;
+                            height: 8px;
+                            background-image: url(../img/arrow.svg);
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+            .social_buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+        .slider {
+            user-select: none;
+            position: absolute;
+            width: 100%;
+            bottom: -100px;
+            .header_slider {
+                overflow: hidden;
+                .header_slider_wrap {
+                    display: flex;
+                    .page {
+                        flex-shrink: 0;
+                        width: 300px;
+                        height: 150px;
+                        position: relative;
+                        .page_content {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                            display: flex;
+                            background-size: cover;
+                            background-image: url("../img/header_slider_img_1.jpg");
+                            .play_video_icon {
+                                cursor: pointer;
+                                position: absolute;
+                                right: 50%;
+                                bottom: 50%;
+                                transform: translate(50%, 50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+
+    .popular_excursions {
+        .popular_excursions_wrap {
+            .popular_excursions_title {
+
+            }
+            .see_all {
+
+            }
+        }
+        .popular_excursions_slider {
+            .popular_excursions_slider_wrap {
+                .page {
+                    // height: 430px;
+                    .page_content {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+            .progress_line {
+                width: 65%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .header {
+        padding-top: 26px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top;
+        min-height: 800px;
+        flex-wrap: wrap;
+        .header_top {
+            display: flex;
+            justify-content: space-between;
+            .menu {
+                color: #fff;
+                font-family: "Montserrat-Medium";
+                font-size: 14px;
+                ul {
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    li {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .main {
+            margin-top: 180px;
+            margin-bottom: 248px;
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+
+            gap: 20px;
+    
+            .main_header {
+                flex-basis: 100%;
+                .main_header-title {
+                    position: relative;
+                    .title_top {
+                        color: #fff;
+                        font-size: 28px;
+                        font-family: "Montserrat-Bold";
+                    }
+                    .title_middle {
+                        transform: translateY(-57%);
+                        left: 206px;
+                        position: absolute;
+                        font-size: 28px;
+                        font-family: "Mr_kindlyjasmineg";
+                        text-align: right;
+                        color: #ffc700;
+                    }
+                    .title_buttom {
+                        font-size: 48px;
+                        font-family: "Montserrat-Black", sans-serif;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-text-stroke: 1px #fff;
+                    }
+                }
+                .to_excursions {
+                    margin-top: 100px;
+                    .button_to_excursions {
+                        position: relative;
+                        font-family: "Montserrat-Bold";
+                        font-size: 14px;
+                        height: 50px;
+                        width: 230px;
+                        background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+                        border-radius: 60px;
+                        border: none;
+                        color: #fff;
+                        &::after {
+                            top: 50%;
+                            right: 40px;
+                            content: "";
+                            position: absolute;
+                            width: 15px;
+                            height: 8px;
+                            background-image: url(../img/arrow.svg);
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+            .social_buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+        .slider {
+            user-select: none;
+            position: absolute;
+            width: 100%;
+            bottom: -100px;
+            .header_slider {
+                overflow: hidden;
+                .header_slider_wrap {
+                    display: flex;
+                    .page {
+                        flex-shrink: 0;
+                        width: 300px;
+                        height: 150px;
+                        position: relative;
+                        .page_content {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                            display: flex;
+                            background-size: cover;
+                            background-image: url("../img/header_slider_img_1.jpg");
+                            .play_video_icon {
+                                cursor: pointer;
+                                position: absolute;
+                                right: 50%;
+                                bottom: 50%;
+                                transform: translate(50%, 50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+
+    .popular_excursions {
+        .popular_excursions_wrap {
+            .popular_excursions_title {
+
+            }
+            .see_all {
+
+            }
+        }
+        .popular_excursions_slider {
+            .popular_excursions_slider_wrap {
+                .page {
+                    // height: 430px;
+                    .page_content {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+            .progress_line {
+                width: 60%;
+            }
+        }
+    }
+}
+
