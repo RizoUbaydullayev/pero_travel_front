@@ -304,13 +304,13 @@ a {
   background-image: url("../img/about_us_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 .about_us .about_us_main {
-  width: 1120px;
   position: absolute;
-  right: 50%;
+  right: 5%;
   top: 50%;
-  transform: translate(50%, -50%);
+  transform: translateY(-50%);
   display: flex;
   justify-content: flex-end;
 }
@@ -444,8 +444,8 @@ a {
   padding: 0 26px;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-auto-rows: 180px;
+  grid-template-columns: repeat(auto-fill, minmax(11%, 1fr));
+  grid-auto-rows: minmax(180px, auto);
   grid-auto-flow: dense;
   grid-gap: 26px;
 }
@@ -494,6 +494,9 @@ a {
 }
 
 .pop_up_for_gallery {
+  padding: 0 12px;
+  width: 100%;
+  height: 100vh;
   display: none;
   position: absolute;
   top: 60%;
@@ -501,7 +504,10 @@ a {
   transform: translate(-50%, -50%);
   justify-content: center;
 }
-.pop_up_for_gallery .pop_up-close {
+.pop_up_for_gallery .pop_up-content {
+  position: relative;
+}
+.pop_up_for_gallery .pop_up-content .pop_up-close {
   border-radius: 10px;
   width: 30px;
   height: 30px;
@@ -512,15 +518,10 @@ a {
   padding: 0;
   border: none;
 }
-.pop_up_for_gallery .pop_up-close img {
+.pop_up_for_gallery .pop_up-content .pop_up-close img {
   width: 30px;
   height: 30px;
 }
-.pop_up_for_gallery .pop_up-content img {
-  width: 100%;
-  object-fit: cover;
-}
-
 /*=========================  reviews  ================================================*/
 .reviews {
   margin-top: 149px;
@@ -549,21 +550,23 @@ a {
   display: flex;
 }
 .reviews .reviews_slider .reviews_slider_wrap .page {
-  background-position: 80% 100%;
-  background-repeat: no-repeat;
-  background-image: url("../img/review_bg.png");
   flex-shrink: 0;
 }
 .reviews .reviews_slider .reviews_slider_wrap .page .page_content {
-  padding: 38px 45px;
-  width: 740px;
+  padding: 38px 0px 38px 0px;
+  width: 600px;
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 .reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_avatar {
   width: 245px;
-  height: 245px;
   flex-shrink: 0;
+}
+.reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_main {
+  background-position: 80% 100%;
+  background-repeat: no-repeat;
+  background-image: url("../img/review_bg.png");
 }
 .reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_main .name_and_age {
   font-size: 14px;
@@ -590,7 +593,7 @@ a {
 .reviews .reviews_slider .progress_line {
   left: 100%;
   transform: translateX(-100%);
-  width: 70%;
+  width: 72%;
   position: relative;
 }
 
@@ -780,6 +783,34 @@ a {
 }
 
 /*=========================  Адаптив  ================================================*/
+@media screen and (min-width: 1921px) {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .header .main .main_header .main_header-title .title_middle {
+    right: 31px;
+  }
+  .about_us .about_us_main {
+    right: 15%;
+  }
+  .popular_excursions .popular_excursions_slider .progress_line {
+    width: 65%;
+  }
+  .gallery .gallery_images {
+    grid-template-columns: repeat(auto-fill, minmax(11%, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+  }
+  .reviews .reviews_slider .progress_line {
+    width: 66%;
+  }
+}
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+  .header .main .main_header .main_header-title .title_middle {
+    right: 31px;
+  }
+}
 @media screen and (min-width: 1280px) and (max-width: 1600px) {
   .header {
     padding-top: 26px;
@@ -898,6 +929,16 @@ a {
     right: 50%;
     bottom: 50%;
     transform: translate(50%, 50%);
+  }
+  .gallery .gallery_images {
+    grid-template-columns: repeat(auto-fill, minmax(10%, 1fr));
+    grid-auto-rows: minmax(140px, auto);
+  }
+  .reviews .reviews_slider .reviews_slider_wrap .page .page_content {
+    width: 600px;
+  }
+  .reviews .reviews_slider .progress_line {
+    width: 77%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -1023,6 +1064,20 @@ a {
     right: 50%;
     bottom: 50%;
     transform: translate(50%, 50%);
+  }
+  .types_of_excursions {
+    margin-top: 150px;
+  }
+  .gallery .gallery_images {
+    grid-template-columns: repeat(auto-fill, minmax(11%, 1fr));
+    grid-auto-rows: minmax(130px, auto);
+    grid-gap: 10px;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap .page .page_content {
+    width: 600px;
+  }
+  .reviews .reviews_slider .progress_line {
+    width: 77%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1153,6 +1208,23 @@ a {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .types_of_excursions {
+    margin-top: 150px;
+  }
+  .types_of_excursions .types_of_excursions-main .excursion {
+    flex-basis: 100%;
+  }
+  .gallery .gallery_images {
+    grid-template-columns: repeat(auto-fill, minmax(11%, 1fr));
+    grid-auto-rows: minmax(110px, auto);
+    grid-gap: 5px;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap .page .page_content {
+    width: 600px;
+  }
+  .reviews .reviews_slider .progress_line {
+    width: 77%;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .container {
@@ -1281,6 +1353,70 @@ a {
   .popular_excursions .popular_excursions_slider .popular_excursions_slider_wrap .page .page_content {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .about_us .about_us_img {
+    width: 84%;
+    height: 700px;
+  }
+  .about_us .about_us_main .about_us_main_wrap {
+    gap: 20px;
+    width: 380px;
+    height: 386px;
+    padding: 40px 40px;
+  }
+  .about_us .about_us_main .about_us_main_wrap .about_us_main-content {
+    font-size: 13px;
+  }
+  .types_of_excursions {
+    margin-top: 150px;
+  }
+  .types_of_excursions .types_of_excursions-main .excursion {
+    flex-basis: 100%;
+  }
+  .types_of_excursions .prompt_and_button .prompt {
+    width: 400px;
+  }
+  .gallery .gallery_images {
+    grid-template-columns: repeat(auto-fill, minmax(11%, 1fr));
+    grid-auto-rows: minmax(110px, auto);
+    grid-gap: 5px;
+  }
+  .gallery .gallery_images .gallery_image:nth-child(1), .gallery .gallery_images .gallery_image:nth-child(5), .gallery .gallery_images .gallery_image:nth-child(6), .gallery .gallery_images .gallery_image:nth-child(8) {
+    display: none;
+  }
+  .gallery .gallery_images .gallery_image:nth-child(2) {
+    grid-row: span 4;
+    grid-column: span 3;
+  }
+  .gallery .gallery_images .gallery_image:nth-child(3) {
+    grid-row: span 2;
+    grid-column: span 3;
+  }
+  .gallery .gallery_images .gallery_image:nth-child(4) {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  .gallery .gallery_images .gallery_image:nth-child(7) {
+    grid-row: span 2;
+    grid-column: span 5;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap {
+    padding-bottom: 50px;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap .page .page_content {
+    width: 100%;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_avatar {
+    width: 190px;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_main {
+    background-position: 80% 30%;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_main .review_text {
+    font-size: 12px;
+  }
+  .reviews .reviews_slider .progress_line {
+    width: 77%;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
@@ -1420,6 +1556,76 @@ a {
   .popular_excursions .popular_excursions_slider .progress_line {
     width: 65%;
   }
+  .about_us .about_us_img {
+    width: 84%;
+    height: 700px;
+  }
+  .about_us .about_us_main .about_us_main_wrap {
+    gap: 20px;
+    width: 300px;
+    height: 350px;
+    padding: 40px 40px;
+  }
+  .about_us .about_us_main .about_us_main_wrap .about_us_main-content {
+    font-size: 11px;
+  }
+  .types_of_excursions {
+    margin-top: 150px;
+  }
+  .types_of_excursions .types_of_excursions-main .excursion {
+    flex-basis: 100%;
+  }
+  .types_of_excursions .prompt_and_button .prompt {
+    width: 300px;
+  }
+  .gallery .gallery_images {
+    grid-template-columns: repeat(auto-fill, minmax(11%, 1fr));
+    grid-auto-rows: minmax(90px, auto);
+    grid-gap: 5px;
+    padding: 0 4px;
+  }
+  .gallery .gallery_images .gallery_image:nth-child(1), .gallery .gallery_images .gallery_image:nth-child(5), .gallery .gallery_images .gallery_image:nth-child(6), .gallery .gallery_images .gallery_image:nth-child(8) {
+    display: none;
+  }
+  .gallery .gallery_images .gallery_image:nth-child(2) {
+    grid-row: span 4;
+    grid-column: span 4;
+  }
+  .gallery .gallery_images .gallery_image:nth-child(3) {
+    grid-row: span 2;
+    grid-column: span 4;
+  }
+  .gallery .gallery_images .gallery_image:nth-child(4) {
+    grid-row: span 2;
+    grid-column: span 4;
+  }
+  .gallery .gallery_images .gallery_image:nth-child(7) {
+    grid-row: span 2;
+    grid-column: span 8;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap {
+    padding-bottom: 50px;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap .page .page_content {
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_avatar {
+    width: 150px;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_main {
+    background-position: 80% 30%;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_main .review_text {
+    font-size: 12px;
+  }
+  .reviews .reviews_slider .container_for_arrows .swiper-button-next {
+    left: 45px;
+  }
+  .reviews .reviews_slider .progress_line {
+    width: 72%;
+  }
 }
 @media screen and (max-width: 320px) {
   .container {
@@ -1557,5 +1763,75 @@ a {
   }
   .popular_excursions .popular_excursions_slider .progress_line {
     width: 60%;
+  }
+  .about_us .about_us_img {
+    width: 84%;
+    height: 600px;
+  }
+  .about_us .about_us_main .about_us_main_wrap {
+    gap: 20px;
+    width: 260px;
+    height: 386px;
+    padding: 30px 20px;
+  }
+  .about_us .about_us_main .about_us_main_wrap .about_us_main-content {
+    font-size: 11px;
+  }
+  .types_of_excursions {
+    margin-top: 150px;
+  }
+  .types_of_excursions .types_of_excursions-main .excursion {
+    flex-basis: 100%;
+  }
+  .types_of_excursions .prompt_and_button .prompt {
+    width: 250px;
+  }
+  .gallery .gallery_images {
+    padding: 0 4px;
+    grid-template-columns: repeat(auto-fill, minmax(10%, 1fr));
+    grid-auto-rows: minmax(90px, auto);
+    grid-gap: 5px;
+  }
+  .gallery .gallery_images .gallery_image:nth-child(1), .gallery .gallery_images .gallery_image:nth-child(5), .gallery .gallery_images .gallery_image:nth-child(6), .gallery .gallery_images .gallery_image:nth-child(8) {
+    display: none;
+  }
+  .gallery .gallery_images .gallery_image:nth-child(2) {
+    grid-row: span 4;
+    grid-column: span 4;
+  }
+  .gallery .gallery_images .gallery_image:nth-child(3) {
+    grid-row: span 2;
+    grid-column: span 4;
+  }
+  .gallery .gallery_images .gallery_image:nth-child(4) {
+    grid-row: span 2;
+    grid-column: span 4;
+  }
+  .gallery .gallery_images .gallery_image:nth-child(7) {
+    grid-row: span 2;
+    grid-column: span 8;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap {
+    padding-bottom: 50px;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap .page .page_content {
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_avatar {
+    width: 150px;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_main {
+    background-position: 80% 30%;
+  }
+  .reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_main .review_text {
+    font-size: 12px;
+  }
+  .reviews .reviews_slider .container_for_arrows .swiper-button-next {
+    left: 45px;
+  }
+  .reviews .reviews_slider .progress_line {
+    width: 72%;
   }
 }/*# sourceMappingURL=main.css.map */
