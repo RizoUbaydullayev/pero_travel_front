@@ -732,6 +732,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     .logo_and_menu {
         align-items: center;
         display: flex;
@@ -1197,6 +1198,14 @@ a {
             }
         }
     }
+
+    .ask_a_question {
+        .ask_a_question_wrap {
+            .ask_a_question_inner {
+                padding: 100px 60px;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1384,6 +1393,25 @@ a {
             .progress_line {
                 width: 77%;
             }
+        }
+    }
+
+    .ask_a_question {
+        .ask_a_question_wrap {
+            .ask_a_question_inner {
+                padding: 100px 60px;
+                width: 60%;
+            }
+        }
+    }
+
+    .footer {
+        gap: 20px;
+        .logo_and_menu {
+            gap: 20px;
+        }
+        .contacts {
+            gap: 20px;
         }
     }
 }
@@ -1621,7 +1649,7 @@ a {
                         }
                         .review_main {
                             background-position: 80% 30%;
-                            
+
                             .review_text {
                                 font-size: 12px;
                             }
@@ -1631,6 +1659,33 @@ a {
             }
             .progress_line {
                 width: 77%;
+            }
+        }
+    }
+
+    .ask_a_question {
+        .ask_a_question_wrap {
+            .ask_a_question_inner {
+                padding: 100px 30px;
+                width: 75%;
+            }
+        }
+    }
+
+    .footer {
+        gap: 20px;
+        .logo_and_menu {
+            gap: 20px;
+            width: 100%;
+            .logo {
+                width: 50%;
+            }
+        }
+        .contacts {
+            gap: 20px;
+            width: 100%;
+            .contacts_inner_1 {
+                width: 50%;
             }
         }
     }
@@ -1880,7 +1935,7 @@ a {
                         }
                         .review_main {
                             background-position: 80% 30%;
-                            
+
                             .review_text {
                                 font-size: 12px;
                             }
@@ -1889,12 +1944,66 @@ a {
                 }
             }
             .container_for_arrows {
-                .swiper-button-next{
+                .swiper-button-next {
                     left: 45px;
                 }
-            } 
+            }
             .progress_line {
                 width: 72%;
+            }
+        }
+    }
+
+    .ask_a_question {
+        .ask_a_question_wrap {
+            justify-content: center;
+            .ask_a_question_inner {
+                align-items: center;
+                justify-content: center;
+                padding: 100px 10px;
+                width: 95%;
+                .ask_a_question_form {
+                    align-items: center;
+                    input {
+                        width: 100%;
+                    }
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .footer {
+        gap: 20px;
+        .logo_and_menu {
+            flex-wrap: wrap;
+            gap: 40px;
+            width: 100%;
+            .logo {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .menu {
+                text-align: center;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .contacts {
+            flex-wrap: wrap;
+            gap: 40px;
+            width: 100%;
+            .contacts_inner_1 {
+                width: 100%;
+                display: flex;
+                align-items: center;
+            }
+            .contacts_inner_2 {
+                width: 100%;
+                display: flex;
+                align-items: center;
             }
         }
     }
@@ -2126,6 +2235,7 @@ a {
             }
         }
     }
+
     .reviews {
         .reviews_wrap {
         }
@@ -2142,7 +2252,7 @@ a {
                         }
                         .review_main {
                             background-position: 80% 30%;
-                            
+
                             .review_text {
                                 font-size: 12px;
                             }
@@ -2151,12 +2261,66 @@ a {
                 }
             }
             .container_for_arrows {
-                .swiper-button-next{
+                .swiper-button-next {
                     left: 45px;
                 }
-            } 
+            }
             .progress_line {
                 width: 72%;
+            }
+        }
+    }
+
+    .ask_a_question {
+        .ask_a_question_wrap {
+            justify-content: center;
+            .ask_a_question_inner {
+                align-items: center;
+                justify-content: center;
+                padding: 100px 5px;
+                width: 98%;
+                .ask_a_question_form {
+                    align-items: center;
+                    input {
+                        width: 100%;
+                    }
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .footer {
+        gap: 20px;
+        .logo_and_menu {
+            flex-wrap: wrap;
+            gap: 40px;
+            width: 100%;
+            .logo {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .menu {
+                text-align: center;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .contacts {
+            flex-wrap: wrap;
+            gap: 40px;
+            width: 100%;
+            .contacts_inner_1 {
+                width: 100%;
+                display: flex;
+                align-items: center;
+            }
+            .contacts_inner_2 {
+                width: 100%;
+                display: flex;
+                align-items: center;
             }
         }
     }
