@@ -90,7 +90,7 @@ function adaptive(width) {
 		header_slider.params.slidesPerView = 5.2;
 		reviews_slider.params.slidesPerView = 3.1;
 
-	};
+	}
 
 	if (width > 1600 && width <= 1920) {
 		header_slider.params.slidesPerView = 4;
@@ -98,14 +98,14 @@ function adaptive(width) {
 		popular_excursions_slider.params.spaceBetween = 20;
 		reviews_slider.params.slidesPerView = 2.3;
 
-	};
+	}
 
 	if (width >= 1280 && width <= 1600) {
 		header_slider.params.slidesPerView = 4;
 		popular_excursions_slider.params.slidesPerView = 4;
 		popular_excursions_slider.params.spaceBetween = 20;
 		reviews_slider.params.slidesPerView = 2;
-	};
+	}
 
 	if (width >= 1024 && width < 1280) {
 		header_slider.params.slidesPerView = 3;
@@ -113,14 +113,14 @@ function adaptive(width) {
 		popular_excursions_slider.params.spaceBetween = 20;
 		reviews_slider.params.slidesPerView = 1.5;
 
-	};
+	}
 
 	if (width >= 768 && width < 1024) {
 		header_slider.params.slidesPerView = 3;
 		popular_excursions_slider.params.slidesPerView = 2.8;
 		popular_excursions_slider.params.spaceBetween = 10;
 		reviews_slider.params.slidesPerView = 1.2;
-	};
+	}
 
 	if (width >= 480 && width < 768) {
 		header_slider.params.slidesPerView = 1.5;
@@ -132,7 +132,7 @@ function adaptive(width) {
 		}
 		reviews_slider.params.slidesPerView = 1;
 
-	};
+	}
 	if (width >= 320 && width < 480) {
 		header_slider.params.slidesPerView = 1.5;
 		popular_excursions_slider.params.slidesPerView = 1.3;
@@ -142,7 +142,12 @@ function adaptive(width) {
 
 		}
 		reviews_slider.params.slidesPerView = 1.3;
-	};
+	}
+	if (width < 320) {
+		header_slider.params.slidesPerView = 1.1;
+		popular_excursions_slider.params.slidesPerView = 1.1;
+		popular_excursions_slider.params.spaceBetween = 10;
+	}
 };
 window.addEventListener("resize", event => {
 	width = window.innerWidth;
