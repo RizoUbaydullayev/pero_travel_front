@@ -90,12 +90,12 @@ a {
     font-size: 14px;
     font-family: "Montserrat-Medium";
     position: relative;
-    width: 475px;
     margin: 80px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     .tabs {
         .tabs_list {
             width: 475px;
@@ -129,7 +129,8 @@ a {
     .small_filter-form {
         font-size: 14px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 10px;
         .filter_element {
             width: 235px;
             height: 50px;
@@ -432,7 +433,7 @@ a {
                 flex-direction: column;
                 align-items: center;
                 .button_apply_filter {
-                    width: 100%;
+                    width: 235px;
                     height: 40px;
                     padding: 0;
                     background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
@@ -445,6 +446,8 @@ a {
                 .reset_filter {
                     margin-top: 10px;
                     border: none;
+                    width: 145px;
+                    height: 20px;
                 }
             }
         }
@@ -650,6 +653,531 @@ a {
             .social_buttons {
                 display: flex;
                 gap: 9px;
+                align-items: center;
+            }
+        }
+    }
+}
+
+/*=========================  Адаптив  ================================================*/
+
+@media screen and (min-width: 1921px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .small_filter {
+        .small_filter-form {
+            justify-content: space-between;
+        }
+    }
+
+    .excursion_main {
+        justify-content: space-between;
+        .big_filter {
+            width: 370px;
+        }
+        .our_tours {
+            .tour_cards {
+                .tour_card {
+                    .tour_card-inner {
+                        width: 600px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+    .container {
+        padding: 0 60px;
+    }
+
+    .excursion_main {
+        // justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+    .container {
+        padding: 0 60px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .container {
+        padding: 0 40px;
+    }
+    .excursion_main {
+        gap: 10px;
+        .our_tours {
+            .tour_cards {
+                .tour_card {
+                    gap: 16px;
+                    .tour_card-inner {
+                        width: 368px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 0 20px;
+    }
+    .header {
+        .header_wrap {
+            .main {
+                .main_header {
+                    font-size: 48px;
+                }
+            }
+        }
+    }
+
+    .excursion_main {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+        .our_tours {
+            .tour_cards {
+                .tour_card {
+                    gap: 16px;
+                    .tour_card-inner {
+                        width: 368px;
+                    }
+                }
+            }
+        }
+        .big_filter {
+            width: 100%;
+            .big_filter-header {
+                text-align: center;
+            }
+            .big_filter-form {
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                row-gap: 20px;
+                column-gap: 50px;
+                .filter_element {
+                    width: 229px;
+                }
+                .form_buttons {
+                    margin: 0;
+                    flex-basis: 100%;
+                    width: 235px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        gap: 20px;
+        .logo_and_menu {
+            gap: 20px;
+        }
+        .contacts {
+            gap: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .container {
+        padding: 0 10px;
+    }
+    .header {
+        .header_wrap {
+            .main {
+                .main_header {
+                    font-size: 48px;
+                }
+            }
+        }
+    }
+    .types_of_excursions-tabs {
+        margin: 30px auto;
+        font-size: 12px;
+        .tabs {
+            .tabs_list {
+                width: 400px;
+            }
+        }
+    }
+    .small_filter {
+        .small_filter-form {
+            flex-wrap: wrap;
+            gap: 0;
+        }
+    }
+    .excursion_main {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 30px;
+        gap: 10px;
+        .our_tours {
+            .tour_cards {
+                .tour_card {
+                    width: 462px;
+                    .tour-img {
+                        width: 190px;
+                        img {
+                            // width: 80%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    gap: 16px;
+                    .tour_card-inner {
+                        width: 256px;
+                        .name {
+                            .type {
+                                font-size: 11px;
+                            }
+                            font-size: 14px;
+                        }
+                        .tour-info {
+                            font-size: 14px;
+                            .duration {
+                                margin: 0;
+                            }
+                        }
+                        .description {
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .big_filter {
+            width: 100%;
+            .big_filter-header {
+                text-align: center;
+            }
+            .big_filter-form {
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                row-gap: 20px;
+                column-gap: 50px;
+                .filter_element {
+                    width: 229px;
+                }
+                .form_buttons {
+                    margin: 0;
+                    flex-basis: 100%;
+                    width: 235px;
+                }
+            }
+        }
+    }
+    .footer {
+        gap: 20px;
+        .logo_and_menu {
+            gap: 20px;
+            width: 100%;
+            .logo {
+                width: 50%;
+            }
+        }
+        .contacts {
+            gap: 20px;
+            width: 100%;
+            .contacts_inner_1 {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .container {
+        padding: 0 5px;
+    }
+    .header {
+        .header_wrap {
+            .header_top {
+                .menu {
+                    text-align: right;
+                    .menu_list {
+                        flex-direction: column;
+                        gap: 0;
+                    }
+                }
+            }
+            .main {
+                .main_header {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+    .types_of_excursions-tabs {
+        margin: 20px auto;
+        font-size: 8px;
+        .tabs {
+            .tabs_list {
+                width: 290px;
+            }
+        }
+    }
+    .small_filter {
+        .small_filter-form {
+            flex-wrap: wrap;
+            gap: 0;
+            .filter_element {
+                width: 180px;
+            }
+        }
+    }
+    .excursion_main {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 30px;
+        gap: 10px;
+        .our_tours {
+            .tour_cards {
+                .tour_card {
+                    flex-direction: column;
+                    width: 300px;
+                    gap: 16px;
+                    .tour-img {
+                        position: relative;
+                        width: 100%;
+                        height: 240px;
+                        border-radius: 10px;
+                        img {
+                            width: 100%;
+                            // height: 100%;
+                            // object-fit: cover;
+                        }
+                    }
+                    .tour_card-inner {
+                        padding: 0 10px;
+
+                        width: 100%;
+                        .name {
+                            .type {
+                                font-size: 11px;
+                            }
+                            font-size: 14px;
+                        }
+                        .tour-info {
+                            font-size: 14px;
+                            .duration {
+                                margin: 0;
+                            }
+                        }
+                        .description {
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .big_filter {
+            width: 100%;
+            .big_filter-header {
+                text-align: center;
+            }
+            .big_filter-form {
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                row-gap: 20px;
+                column-gap: 50px;
+                .filter_element {
+                    width: 229px;
+                }
+                .form_buttons {
+                    margin: 0;
+                    flex-basis: 100%;
+                    width: 235px;
+                }
+            }
+        }
+    }
+    .footer {
+        gap: 20px;
+        .logo_and_menu {
+            flex-wrap: wrap;
+            gap: 40px;
+            width: 100%;
+            .logo {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .menu {
+                text-align: center;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .contacts {
+            flex-wrap: wrap;
+            gap: 40px;
+            width: 100%;
+            .contacts_inner_1 {
+                width: 100%;
+                display: flex;
+                align-items: center;
+            }
+            .contacts_inner_2 {
+                width: 100%;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 0 5px;
+    }
+    .header {
+        .header_wrap {
+            .header_top {
+                .menu {
+                    text-align: right;
+                    .menu_list {
+                        flex-direction: column;
+                        gap: 0;
+                    }
+                }
+            }
+            .main {
+                .main_header {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+    .types_of_excursions-tabs {
+        margin: 20px auto;
+        font-size: 8px;
+        .tabs {
+            .tabs_list {
+                width: 290px;
+            }
+        }
+    }
+    .small_filter {
+        .small_filter-form {
+            flex-wrap: wrap;
+            gap: 0;
+            .filter_element {
+                width: 180px;
+            }
+        }
+    }
+    .excursion_main {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 30px;
+        gap: 10px;
+        .our_tours {
+            .tour_cards {
+                .tour_card {
+                    flex-direction: column;
+                    width: 290px;
+                    gap: 16px;
+                    .tour-img {
+                        position: relative;
+                        width: 100%;
+                        height: 240px;
+                        border-radius: 10px;
+                        img {
+                            width: 100%;
+                            // height: 100%;
+                            // object-fit: cover;
+                        }
+                    }
+                    .tour_card-inner {
+                        padding: 0 10px;
+
+                        width: 100%;
+                        .name {
+                            .type {
+                                font-size: 11px;
+                            }
+                            font-size: 14px;
+                        }
+                        .tour-info {
+                            font-size: 14px;
+                            .duration {
+                                margin: 0;
+                            }
+                        }
+                        .description {
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .big_filter {
+            width: 100%;
+            .big_filter-header {
+                text-align: center;
+            }
+            .big_filter-form {
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                row-gap: 20px;
+                column-gap: 50px;
+                .filter_element {
+                    width: 229px;
+                }
+                .form_buttons {
+                    margin: 0;
+                    flex-basis: 100%;
+                    width: 235px;
+                }
+            }
+        }
+    }
+    .footer {
+        gap: 20px;
+        .logo_and_menu {
+            flex-wrap: wrap;
+            gap: 40px;
+            width: 100%;
+            .logo {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .menu {
+                text-align: center;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .contacts {
+            flex-wrap: wrap;
+            gap: 40px;
+            width: 100%;
+            .contacts_inner_1 {
+                width: 100%;
+                display: flex;
+                align-items: center;
+            }
+            .contacts_inner_2 {
+                width: 100%;
+                display: flex;
                 align-items: center;
             }
         }

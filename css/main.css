@@ -5,6 +5,7 @@
   src: url("../fonts/mr_kindlyjasmineg.woff2") format("woff2"), url("../fonts/mr_kindlyjasmineg.woff") format("woff");
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Montserrat-Black";
   src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
@@ -13,6 +14,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Montserrat-Bold";
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
@@ -20,6 +22,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Montserrat-Medium";
   src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
@@ -27,6 +30,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 /*=========================  Базовые настройки  ================================================*/
 body {
   font-family: "Montserrat-Medium";
@@ -56,22 +60,27 @@ a {
   min-height: 1052px;
   flex-wrap: wrap;
 }
+
 .header .header_top {
   display: flex;
   justify-content: space-between;
 }
+
 .header .header_top .menu {
   color: #fff;
   font-family: "Montserrat-Medium";
   font-size: 14px;
 }
+
 .header .header_top .menu ul {
   display: flex;
   gap: 20px;
 }
+
 .header .header_top .menu ul li {
   display: inline-block;
 }
+
 .header .main {
   margin-top: 180px;
   margin-bottom: 248px;
@@ -79,14 +88,17 @@ a {
   justify-content: space-between;
   gap: 50px;
 }
+
 .header .main .main_header .main_header-title {
   position: relative;
 }
+
 .header .main .main_header .main_header-title .title_top {
   color: #fff;
   font-size: 72px;
   font-family: "Montserrat-Bold";
 }
+
 .header .main .main_header .main_header-title .title_middle {
   transform: translateY(-57%);
   position: absolute;
@@ -95,15 +107,18 @@ a {
   text-align: right;
   color: #ffc700;
 }
+
 .header .main .main_header .main_header-title .title_buttom {
   font-size: 96px;
   font-family: "Montserrat-Black", sans-serif;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px #fff;
 }
+
 .header .main .main_header .to_excursions {
   margin-top: 100px;
 }
+
 .header .main .main_header .to_excursions .button_to_excursions {
   position: relative;
   font-family: "Montserrat-Bold";
@@ -115,6 +130,7 @@ a {
   border: none;
   color: #fff;
 }
+
 .header .main .main_header .to_excursions .button_to_excursions::after {
   top: 50%;
   right: 40px;
@@ -125,6 +141,7 @@ a {
   background-image: url(../img/arrow.svg);
   transform: translateY(-50%);
 }
+
 .header .main .social_buttons {
   display: flex;
   flex-direction: column;
@@ -132,24 +149,29 @@ a {
   justify-content: center;
   gap: 15px;
 }
+
 .header .slider {
   user-select: none;
   position: absolute;
   width: 100%;
   bottom: -100px;
 }
+
 .header .slider .header_slider {
   overflow: hidden;
 }
+
 .header .slider .header_slider .header_slider_wrap {
   display: flex;
 }
+
 .header .slider .header_slider .header_slider_wrap .page {
   flex-shrink: 0;
   width: 360px;
   height: 227px;
   position: relative;
 }
+
 .header .slider .header_slider .header_slider_wrap .page .page_content {
   width: 100%;
   height: 100%;
@@ -158,6 +180,7 @@ a {
   background-size: cover;
   background-image: url("../img/header_slider_img_1.jpg");
 }
+
 .header .slider .header_slider .header_slider_wrap .page .page_content .play_video_icon {
   cursor: pointer;
   position: absolute;
@@ -171,31 +194,37 @@ a {
   position: relative;
   margin-top: 263px;
 }
+
 .popular_excursions .popular_excursions_wrap {
   margin-bottom: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .popular_excursions .popular_excursions_wrap .popular_excursions_title {
   font-family: "Montserrat-Bold";
   font-size: 24px;
   color: #0499dd;
 }
+
 .popular_excursions .popular_excursions_wrap .see_all .see_all_link {
   font-family: "Montserrat-Medium";
   font-size: 12px;
   text-decoration-line: underline;
 }
+
 .popular_excursions .popular_excursions_slider {
   user-select: none;
   padding-bottom: 100px;
   position: relative;
   overflow: hidden;
 }
+
 .popular_excursions .popular_excursions_slider .popular_excursions_slider_wrap {
   display: flex;
 }
+
 .popular_excursions .popular_excursions_slider .popular_excursions_slider_wrap .page {
   border-radius: 10px;
   width: 360px;
@@ -206,6 +235,7 @@ a {
   background-size: cover;
   position: relative;
 }
+
 .popular_excursions .popular_excursions_slider .popular_excursions_slider_wrap .page .page_content {
   padding: 0 16px 42px 16px;
   height: 100%;
@@ -214,24 +244,29 @@ a {
   justify-content: flex-end;
   color: #fff;
 }
+
 .popular_excursions .popular_excursions_slider .popular_excursions_slider_wrap .page .page_content .type_of_excursion {
   margin-bottom: 2px;
 }
+
 .popular_excursions .popular_excursions_slider .popular_excursions_slider_wrap .page .page_content .tour_name {
   margin-bottom: 14px;
   font-size: 14px;
   font-family: "Montserrat-Bold";
   color: #ffc700;
 }
+
 .popular_excursions .popular_excursions_slider .popular_excursions_slider_wrap .page .page_content .duration_and_cost {
   margin-bottom: 20px;
   display: flex;
   gap: 13px;
 }
+
 .popular_excursions .popular_excursions_slider .popular_excursions_slider_wrap .page .page_content .duration_and_cost .duration {
   position: relative;
   padding-left: 23px;
 }
+
 .popular_excursions .popular_excursions_slider .popular_excursions_slider_wrap .page .page_content .duration_and_cost .duration::before {
   position: absolute;
   content: "";
@@ -243,10 +278,12 @@ a {
   background-size: cover;
   background-image: url("../img/duration.svg");
 }
+
 .popular_excursions .popular_excursions_slider .popular_excursions_slider_wrap .page .page_content .duration_and_cost .cost {
   position: relative;
   padding-left: 27px;
 }
+
 .popular_excursions .popular_excursions_slider .popular_excursions_slider_wrap .page .page_content .duration_and_cost .cost::before {
   position: absolute;
   content: "";
@@ -258,9 +295,11 @@ a {
   background-size: cover;
   background-image: url("../img/cost_icon.svg");
 }
+
 .popular_excursions .popular_excursions_slider .popular_excursions_slider_wrap .page .page_content .tour_description {
   margin-bottom: 20px;
 }
+
 .popular_excursions .popular_excursions_slider .popular_excursions_slider_wrap .page .page_content .more .more_button {
   position: relative;
   font-family: "Montserrat-Bold";
@@ -272,19 +311,23 @@ a {
   border: none;
   color: #fff;
 }
+
 .popular_excursions .popular_excursions_slider .container_for_arrows {
   height: 50px;
   position: relative;
   max-width: 1120px;
   margin: 0 auto;
 }
+
 .popular_excursions .popular_excursions_slider .container_for_arrows .arrow {
   top: 250%;
   transform: translateY(-50%);
 }
+
 .popular_excursions .popular_excursions_slider .container_for_arrows .swiper-button-next {
   left: 80px;
 }
+
 .popular_excursions .popular_excursions_slider .progress_line {
   left: 100%;
   transform: translateX(-100%);
@@ -298,6 +341,7 @@ a {
   margin-top: 60px;
   position: relative;
 }
+
 .about_us .about_us_img {
   width: 75%;
   height: 998px;
@@ -306,6 +350,7 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 .about_us .about_us_main {
   position: absolute;
   right: 5%;
@@ -314,6 +359,7 @@ a {
   display: flex;
   justify-content: flex-end;
 }
+
 .about_us .about_us_main .about_us_main_wrap {
   border-radius: 10px;
   display: flex;
@@ -322,14 +368,16 @@ a {
   gap: 40px;
   width: 550px;
   height: 450px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   padding: 60px 85px;
 }
+
 .about_us .about_us_main .about_us_main_wrap .about_us_main-title {
   font-size: 24px;
   font-family: "Montserrat-Bold";
   color: #0499dd;
 }
+
 .about_us .about_us_main .about_us_main_wrap .about_us_main-content {
   font-size: 14px;
   display: flex;
@@ -341,36 +389,43 @@ a {
 .types_of_excursions {
   margin-top: 150px;
 }
+
 .types_of_excursions .types_of_excursions-title {
   margin-bottom: 90px;
   font-family: "Montserrat-Bold";
   font-size: 24px;
   color: #0499dd;
 }
+
 .types_of_excursions .types_of_excursions-main {
   display: flex;
   flex-wrap: wrap;
   row-gap: 40px;
   column-gap: 20px;
 }
+
 .types_of_excursions .types_of_excursions-main .excursion {
   width: calc(50% - 10px);
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
+
 .types_of_excursions .types_of_excursions-main .excursion .excursion_icon {
   flex-shrink: 0;
 }
+
 .types_of_excursions .types_of_excursions-main .excursion .excursion_info .name {
   color: #0499dd;
   font-family: "Montserrat-Bold";
   font-size: 18px;
 }
+
 .types_of_excursions .types_of_excursions-main .excursion .excursion_info .description {
   font-size: 14px;
   line-height: 17px;
 }
+
 .types_of_excursions .prompt_and_button {
   text-align: center;
   margin-top: 60px;
@@ -378,10 +433,12 @@ a {
   flex-direction: column;
   align-items: center;
 }
+
 .types_of_excursions .prompt_and_button .prompt {
   width: 550px;
   font-size: 14px;
 }
+
 .types_of_excursions .prompt_and_button .button_to_excursions {
   font-family: "Montserrat-Bold";
   font-size: 14px;
@@ -395,51 +452,40 @@ a {
 }
 
 /*=========================  gallery  ================================================*/
-@-webkit-keyframes pulsate-bck {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(0.97);
-    transform: scale(0.97);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
+
 @keyframes pulsate-bck {
   0% {
-    -webkit-transform: scale(1);
     transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(0.97);
     transform: scale(0.97);
   }
   100% {
-    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
+
 .gallery {
   position: relative;
   margin-top: 150px;
 }
+
 .gallery .gallery_top {
   margin-bottom: 90px;
   display: flex;
   justify-content: space-between;
 }
+
 .gallery .gallery_top .gallery_title {
   font-size: 24px;
   font-family: "Montserrat-Bold";
   color: #0499dd;
 }
+
 .gallery .gallery_top .gallery_see_all {
   text-decoration: underline;
 }
+
 .gallery .gallery_images {
   padding: 0 26px;
   position: relative;
@@ -449,6 +495,7 @@ a {
   grid-auto-flow: dense;
   grid-gap: 26px;
 }
+
 .gallery .gallery_images .gallery_image {
   background-size: cover;
   background-position: center;
@@ -456,38 +503,46 @@ a {
   border-radius: 10px;
   cursor: pointer;
 }
+
 .gallery .gallery_images .gallery_image:hover {
-  -webkit-animation: pulsate-bck 0.5s ease-in-out both;
   animation: pulsate-bck 0.5s ease-in-out both;
 }
+
 .gallery .gallery_images .gallery_image:nth-child(1) {
   grid-row: span 2;
   grid-column: span 3;
 }
+
 .gallery .gallery_images .gallery_image:nth-child(2) {
   grid-row: span 4;
   grid-column: span 2;
 }
+
 .gallery .gallery_images .gallery_image:nth-child(3) {
   grid-row: span 2;
   grid-column: span 2;
 }
+
 .gallery .gallery_images .gallery_image:nth-child(4) {
   grid-row: span 2;
   grid-column: span 1;
 }
+
 .gallery .gallery_images .gallery_image:nth-child(5) {
   grid-row: span 2;
   grid-column: span 1;
 }
+
 .gallery .gallery_images .gallery_image:nth-child(6) {
   grid-row: span 1;
   grid-column: span 2;
 }
+
 .gallery .gallery_images .gallery_image:nth-child(7) {
   grid-row: span 2;
   grid-column: span 3;
 }
+
 .gallery .gallery_images .gallery_image:nth-child(8) {
   grid-row: span 1;
   grid-column: span 2;
@@ -504,9 +559,11 @@ a {
   transform: translate(-50%, -50%);
   justify-content: center;
 }
+
 .pop_up_for_gallery .pop_up-content {
   position: relative;
 }
+
 .pop_up_for_gallery .pop_up-content .pop_up-close {
   border-radius: 10px;
   width: 30px;
@@ -518,40 +575,49 @@ a {
   padding: 0;
   border: none;
 }
+
 .pop_up_for_gallery .pop_up-content .pop_up-close img {
   width: 30px;
   height: 30px;
 }
+
 /*=========================  reviews  ================================================*/
 .reviews {
   margin-top: 149px;
 }
+
 .reviews .reviews_wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .reviews .reviews_wrap .reviews_title {
   font-family: "Montserrat-Bold";
   font-size: 24px;
   color: #0499dd;
 }
+
 .reviews .reviews_wrap .see_all {
   font-family: "Montserrat-Medium";
   font-size: 12px;
   text-decoration-line: underline;
 }
+
 .reviews .reviews_slider {
   user-select: none;
   overflow: hidden;
 }
+
 .reviews .reviews_slider .reviews_slider_wrap {
   padding-bottom: 80px;
   display: flex;
 }
+
 .reviews .reviews_slider .reviews_slider_wrap .page {
   flex-shrink: 0;
 }
+
 .reviews .reviews_slider .reviews_slider_wrap .page .page_content {
   padding: 38px 0px 38px 0px;
   width: 600px;
@@ -559,37 +625,45 @@ a {
   align-items: center;
   gap: 20px;
 }
+
 .reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_avatar {
   width: 245px;
   flex-shrink: 0;
 }
+
 .reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_main {
   background-position: 80% 100%;
   background-repeat: no-repeat;
   background-image: url("../img/review_bg.png");
 }
+
 .reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_main .name_and_age {
   font-size: 14px;
   font-family: "Montserrat-Bold";
 }
+
 .reviews .reviews_slider .reviews_slider_wrap .page .page_content .review_main .review_text {
   margin-top: 20px;
   font-size: 14px;
   font-family: "Montserrat-Medium";
 }
+
 .reviews .reviews_slider .container_for_arrows {
   height: 50px;
   position: relative;
   max-width: 1120px;
   margin: 0 auto;
 }
+
 .reviews .reviews_slider .container_for_arrows .arrow {
   top: 20px;
   transform: translateY(-50%);
 }
+
 .reviews .reviews_slider .container_for_arrows .swiper-button-next {
   left: 80px;
 }
+
 .reviews .reviews_slider .progress_line {
   left: 100%;
   transform: translateX(-100%);
@@ -601,10 +675,12 @@ a {
 .ask_a_question {
   background-image: url("../img/ask_a_question-bg.jpg");
 }
+
 .ask_a_question .ask_a_question_wrap {
   display: flex;
   justify-content: end;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner {
   padding: 140px 100px;
   backdrop-filter: blur(10px);
@@ -612,22 +688,26 @@ a {
   display: flex;
   flex-direction: column;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner .ask_a_question_title {
   font-size: 24px;
   font-family: "Montserrat-Bold";
   color: #fff;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner .ask_a_question_subtitle {
   font-family: "Montserrat-Medium";
   font-size: 14px;
   color: #ffc700;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner .ask_a_question_form {
   margin-top: 45px;
   display: flex;
   flex-direction: column;
   gap: 45px;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner .ask_a_question_form input {
   user-select: none;
   outline: none;
@@ -638,45 +718,56 @@ a {
   background: transparent;
   border-bottom: 1px solid #fff;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner .ask_a_question_form input::-webkit-input-placeholder {
   /* WebKit browsers */
   color: #fff;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner .ask_a_question_form input:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #fff;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner .ask_a_question_form input::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #fff;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner .ask_a_question_form input:-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: #fff;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner .ask_a_question_form input:focus {
   border: none;
   border-bottom: 1px solid #ffc700;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner .ask_a_question_form input:focus {
   color: #ffc700;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner .ask_a_question_form input:focus::-webkit-input-placeholder {
   /* WebKit browsers */
   color: #ffc700;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner .ask_a_question_form input:focus:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #ffc700;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner .ask_a_question_form input:focus::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #ffc700;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner .ask_a_question_form input:focus:-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: #ffc700;
 }
+
 .ask_a_question .ask_a_question_wrap .ask_a_question_inner .ask_a_question_form button {
   font-family: "Montserrat-Bold";
   font-size: 14px;
@@ -697,29 +788,35 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .footer .logo_and_menu {
   align-items: center;
   display: flex;
   gap: 110px;
 }
+
 .footer .logo_and_menu .menu .menu_list {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
+
 .footer .contacts {
   display: flex;
   gap: 110px;
 }
+
 .footer .contacts .contacts_inner_1 {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
+
 .footer .contacts .contacts_inner_1 .watsapp_number {
   padding-left: 28px;
   position: relative;
 }
+
 .footer .contacts .contacts_inner_1 .watsapp_number a::before {
   content: "";
   position: absolute;
@@ -730,10 +827,12 @@ a {
   transform: translateY(-50%);
   left: 0px;
 }
+
 .footer .contacts .contacts_inner_1 .telegram_number {
   padding-left: 28px;
   position: relative;
 }
+
 .footer .contacts .contacts_inner_1 .telegram_number a::before {
   content: "";
   position: absolute;
@@ -744,10 +843,12 @@ a {
   transform: translateY(-50%);
   left: 0px;
 }
+
 .footer .contacts .contacts_inner_1 .telegram_bot {
   padding-left: 28px;
   position: relative;
 }
+
 .footer .contacts .contacts_inner_1 .telegram_bot a::before {
   content: "";
   position: absolute;
@@ -758,15 +859,18 @@ a {
   transform: translateY(-50%);
   left: 0px;
 }
+
 .footer .contacts .contacts_inner_2 {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 .footer .contacts .contacts_inner_2 .email {
   padding-left: 28px;
   position: relative;
 }
+
 .footer .contacts .contacts_inner_2 .email a::before {
   content: "";
   position: absolute;
@@ -777,6 +881,7 @@ a {
   transform: translateY(-50%);
   left: 0px;
 }
+
 .footer .contacts .contacts_inner_2 .social_buttons {
   display: flex;
   gap: 9px;
@@ -807,11 +912,13 @@ a {
     width: 66%;
   }
 }
+
 @media screen and (min-width: 1601px) and (max-width: 1920px) {
   .header .main .main_header .main_header-title .title_middle {
     right: 31px;
   }
 }
+
 @media screen and (min-width: 1280px) and (max-width: 1600px) {
   .header {
     padding-top: 26px;
@@ -942,6 +1049,7 @@ a {
     width: 77%;
   }
 }
+
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .container {
     max-width: 1440px;
@@ -1084,6 +1192,7 @@ a {
     padding: 100px 60px;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .container {
     max-width: 1440px;
@@ -1243,6 +1352,7 @@ a {
     gap: 20px;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .container {
     max-width: 1440px;
@@ -1457,6 +1567,7 @@ a {
     width: 50%;
   }
 }
+
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .container {
     max-width: 1440px;
@@ -1715,6 +1826,7 @@ a {
     align-items: center;
   }
 }
+
 @media screen and (max-width: 320px) {
   .container {
     max-width: 1440px;
@@ -1972,4 +2084,5 @@ a {
     display: flex;
     align-items: center;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
