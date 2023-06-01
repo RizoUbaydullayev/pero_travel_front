@@ -103,7 +103,6 @@ a {
                     text-align: center;
                 }
                 .add_to_favorites_form {
-
                     #add_to_favorites {
                         display: none;
                         -webkit-appearance: none;
@@ -120,7 +119,6 @@ a {
                         border-radius: 100%;
                         background-repeat: no-repeat;
                         background-position: center center;
-
                     }
                     .label_checked {
                         background-image: url("../img/tour_overview_added_to_fav.png");
@@ -134,22 +132,94 @@ a {
 /*=========================  tour_description  ================================================*/
 
 .tour_description {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // flex-wrap: wrap;
     .description {
+        width: 382px;
         .description_title {
-
+            font-size: 24px;
+            font-family: "Montserrat-Bold";
+            color: #0499dd;
         }
         .description_text {
-
+            margin-top: 40px;
+            font-size: 14px;
+            font-family: "Montserrat-Medium";
         }
     }
     .details {
-        .adult_ticket_price {
+        display: flex;
+        // width: 632px;
+        justify-content: flex-end;
+        gap: 52px;
+        .detail {
+            position: relative;
+            width: 178px;
+            height: 117px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            &::before {
+                border-radius: 100%;
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 57px;
+                height: 57px;
+                background: #ffc700;
+            }
             .detail_wrap {
+                width: 160px;
+                height: 100px;
+                background: rgba(255, 255, 255, 0.2);
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(10px);
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
                 .detail_main {
-
+                    padding-left: 40px;
+                    position: relative;
+                    color: #0499dd;
+                    font-size: 24px;
+                    font-family: "Montserrat-Bold", sans-serif;
+                    &::before {
+                        padding: 1px;
+                        content: "";
+                        position: absolute;
+                        width: 25px;
+                        height: 25px;
+                        background: url("../img/cost_icon.svg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
                 }
                 .detail_label {
-                    
+                    font-size: 14px;
+                    font-family: "Montserrat-Medium", sans-serif;
+                }
+            }
+        }
+        .duration {
+            .detail_wrap {
+                .detail_main {
+                    &::before {
+
+                        background: url("../img/duration.svg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+
+                    }
                 }
             }
         }

@@ -48,7 +48,7 @@ a {
   text-decoration: none;
 }
 
-/*=========================  Базовые настройки  ================================================*/
+/*=========================  header  ================================================*/
 .header {
   background-position: top center;
   background-image: url("../img/tour_overview_001.png");
@@ -125,5 +125,102 @@ a {
 
 .header .header_wrap .header_main .header_main-buttons .add_to_favorites_form .label_checked {
   background-image: url("../img/tour_overview_added_to_fav.png");
+}
+
+/*=========================  tour_description  ================================================*/
+.tour_description {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tour_description .description {
+  width: 382px;
+}
+
+.tour_description .description .description_title {
+  font-size: 24px;
+  font-family: "Montserrat-Bold";
+  color: #0499dd;
+}
+
+.tour_description .description .description_text {
+  margin-top: 40px;
+  font-size: 14px;
+  font-family: "Montserrat-Medium";
+}
+
+.tour_description .details {
+  display: flex;
+  justify-content: flex-end;
+  gap: 52px;
+}
+
+.tour_description .details .detail {
+  position: relative;
+  width: 178px;
+  height: 117px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.tour_description .details .detail::before {
+  border-radius: 100%;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 57px;
+  height: 57px;
+  background: #ffc700;
+}
+
+.tour_description .details .detail .detail_wrap {
+  width: 160px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tour_description .details .detail .detail_wrap .detail_main {
+  padding-left: 40px;
+  position: relative;
+  color: #0499dd;
+  font-size: 24px;
+  font-family: "Montserrat-Bold", sans-serif;
+}
+
+.tour_description .details .detail .detail_wrap .detail_main::before {
+  padding: 1px;
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: url("../img/cost_icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tour_description .details .detail .detail_wrap .detail_label {
+  font-size: 14px;
+  font-family: "Montserrat-Medium", sans-serif;
+}
+
+.tour_description .details .duration .detail_wrap .detail_main::before {
+  background: url("../img/duration.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=tour_overview.css.map */
