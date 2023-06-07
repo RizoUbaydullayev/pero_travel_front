@@ -223,4 +223,102 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+/*=========================  travel_calendar  ================================================*/
+.travel_calendar {
+  background-image: url("../img/travel_calendar-bg.png");
+  background-repeat: no-repeat;
+  background-size: 55% auto;
+  background-position: left center;
+  height: 900px;
+}
+
+.travel_calendar .travel_calendar-wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.travel_calendar .travel_calendar-wrap .travel_calendar-title {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 24px;
+  color: #0499dd;
+}
+
+.travel_calendar .travel_calendar-wrap #travel_calendar-calendar {
+  width: 560px;
+  height: 446px;
+  background: transparent;
+}
+
+.travel_calendar .travel_calendar-wrap #travel_calendar-calendar .air_datepicker-travel_calendar {
+  width: 100%;
+}
+
+.travel_calendar .travel_calendar-wrap #travel_calendar-calendar .air_datepicker-travel_calendar .air-datepicker--navigation {
+  padding: 20px 20px 0 20px;
+  font-size: 24px;
+  color: #0499dd;
+}
+
+.travel_calendar .travel_calendar-wrap #travel_calendar-calendar .air_datepicker-travel_calendar .air-datepicker--navigation i {
+  color: #0499dd;
+}
+
+.travel_calendar .travel_calendar-wrap #travel_calendar-calendar .air_datepicker-travel_calendar .air-datepicker--navigation .air-datepicker-nav .air-datepicker-nav--title {
+  font-size: 24px;
+  font-family: "Montserrat-Bold", sans-serif;
+}
+
+.travel_calendar .travel_calendar-wrap #travel_calendar-calendar .air_datepicker-travel_calendar .air-datepicker--navigation .air-datepicker-nav .air-datepicker-nav--action svg path {
+  stroke: #0499dd;
+}
+
+.travel_calendar .travel_calendar-wrap #travel_calendar-calendar .air_datepicker-travel_calendar .air-datepicker--content {
+  padding: 20px;
+}
+
+.travel_calendar .travel_calendar-wrap #travel_calendar-calendar .air_datepicker-travel_calendar .air-datepicker--content .air-datepicker-body .air-datepicker-body--day-names .air-datepicker-body--day-name {
+  color: #282828;
+  font-size: 18px;
+  font-family: "Montserrat-Bold", sans-serif;
+}
+
+.travel_calendar .travel_calendar-wrap #travel_calendar-calendar .air_datepicker-travel_calendar .air-datepicker--content .air-datepicker-body .air-datepicker-body--day-name {
+  font-size: 14px;
+  font-family: "Montserrat-Medium", sans-serif;
+  border: #ffc700 1px solid;
+}
+
+.travel_calendar .travel_calendar-wrap #travel_calendar-calendar .air_datepicker-travel_calendar .air-datepicker--content .air-datepicker-body .-days- {
+  color: #000000;
+  margin-top: 20px;
+  grid-row-gap: 25px;
+  font-size: 14px;
+  font-family: "Montserrat-Medium", sans-serif;
+}
+
+.travel_calendar .travel_calendar-wrap #travel_calendar-calendar .air_datepicker-travel_calendar .air-datepicker--content .air-datepicker-body .-days- .-day- {
+  align-items: flex-start;
+}
+
+.travel_calendar .travel_calendar-wrap #travel_calendar-calendar .air_datepicker-travel_calendar .air-datepicker--content .air-datepicker-body .-days- .-day- .day_inner {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.travel_calendar .travel_calendar-wrap #travel_calendar-calendar .air_datepicker-travel_calendar .air-datepicker--content .air-datepicker-body .-days- .-day- .day_inner .tour_time {
+  font-size: 10px;
+  color: #0499DD;
+}
+
+.travel_calendar .travel_calendar-wrap #travel_calendar-calendar .air_datepicker-travel_calendar .air-datepicker--content .air-datepicker-body .-days- .-selected- {
+  background-color: transparent;
+  color: #000000;
+}
 /*# sourceMappingURL=tour_overview.css.map */
