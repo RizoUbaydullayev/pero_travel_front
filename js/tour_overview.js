@@ -1,9 +1,11 @@
 // =============== header =================================
-let addToFavoritesBtn = document.querySelector("#add_to_favorites");
+let addToFavoritesBtn = document.querySelectorAll(".add_to_favorites_input");
 let addToFavoritesBtnLabels = document.querySelectorAll(".add_to_favorites_label");
 addToFavoritesBtnLabels.forEach(label => {
 	label.addEventListener("click", (event) => {
-		event.target.classList.toggle("label_checked");
+		addToFavoritesBtnLabels.forEach(el => {
+			el.classList.toggle("label_checked");
+		})
 	})
 })
 
@@ -95,3 +97,9 @@ let reviews_slider = new Swiper('.reviews_slider', {
 		prevEl: ".swiper-button-prev",
 	},
 })
+
+/*=========================  book_tour  ================================================*/
+
+let bookTourDateInput = new AirDatepicker('.date-input', {
+	classes: "book_tour-date_input",
+});
