@@ -27,5 +27,25 @@ calendarDays.forEach(el => {
     }
 })
 
+// =============== route_description =================================
 
+const reviews_slider = new Swiper('.route_description_slider', {
+	wrapperClass: "route_description_slider-wrap",
+	slideClass: "page",
+	slidesPerView: 1.5,
+	spaceBetween: 20,
+	freeMode: {
+		enabled: true,
+		sticky: false,
+	},
+	pagination: {
+		el: ".progress_line",
+		type: "progressbar",
+		progressbarOpposite: false,
+	},
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+})
 

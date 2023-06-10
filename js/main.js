@@ -10,7 +10,7 @@ let header_slider = new Swiper('.header_slider', {
 
 /*=========================  popular excursions slider  ================================================*/
 
-const popular_excursions_slider = new Swiper('.popular_excursions_slider', {
+let popular_excursions_slider = new Swiper('.popular_excursions_slider', {
 	wrapperClass: "popular_excursions_slider_wrap",
 	slideClass: "page",
 	slidesPerView: 5.1,
@@ -59,7 +59,7 @@ document.addEventListener("click", event => {
 
 /*=========================  reviews  ================================================*/
 
-const reviews_slider = new Swiper('.reviews_slider', {
+let reviews_slider = new Swiper('.reviews_slider', {
 	wrapperClass: "reviews_slider_wrap",
 	slideClass: "page",
 	slidesPerView: 2.3,
