@@ -16,7 +16,7 @@ let travelCalendar = new AirDatepicker('.travel_calendar-calendar', {
 });
 
 let calendarDays = document.querySelectorAll(".-day-");
-
+let delimiter = (window.innerWidth <= 480) ? "" : "-";
 calendarDays.forEach(el => {
 	if (!el.classList.contains('-other-month-')) {
 		let startTime = "6:00";
@@ -24,16 +24,16 @@ calendarDays.forEach(el => {
 		el.innerHTML = `
         <div class="day_inner">
             <div>${el.textContent}</div>
-            <div class="tour_time">${startTime}:${endTime}</div>
+            <div class="tour_time"><div>${startTime}</div>${delimiter}<div>${endTime}</div></div>
         </div>`
 	}
 })
 
 // =============== route_description =================================
-const routeDescriptionSlider = new Swiper('.route_description_slider', {
+var routeDescriptionSlider = new Swiper('.route_description_slider', {
 	wrapperClass: "route_description_slider-wrap",
 	slideClass: "page",
-	slidesPerView: 1.5,
+	slidesPerView: 1.45,
 	spaceBetween: 20,
 	freeMode: {
 		enabled: true,
@@ -49,6 +49,7 @@ const routeDescriptionSlider = new Swiper('.route_description_slider', {
 		prevEl: ".swiper-button-prev",
 	},
 })
+
 
 /*=========================  galery  ================================================*/
 let pop_up_for_gallery = document.querySelector(".pop_up_for_gallery");
@@ -84,8 +85,8 @@ let reviews_slider = new Swiper('.reviews_slider', {
 	slidesPerView: 2.3,
 	spaceBetween: 20,
 	freeMode: {
-		enabled: true,
-		sticky: false,
+		enabled: false,
+		sticky: true,
 	},
 	pagination: {
 		el: ".progress_line",
@@ -103,3 +104,60 @@ let reviews_slider = new Swiper('.reviews_slider', {
 let bookTourDateInput = new AirDatepicker('.date-input', {
 	classes: "book_tour-date_input",
 });
+
+
+// /*=========================  Адаптив  ================================================*/
+
+adaptive(window.innerWidth);
+window.addEventListener("resize", () => {
+	width = window.innerWidth;
+	adaptive(width);
+});
+
+function adaptive(width) {
+	if (width > 1920) {
+		reviews_slider.params.slidesPerView = 3.1;
+	}
+
+	if (width > 1600 && width <= 1920) {
+		routeDescriptionSlider.params.slidesPerView = 1.5;
+		reviews_slider.params.slidesPerView = 2.3;
+	}
+
+
+	if (width >= 1280 && width <= 1600) {
+		routeDescriptionSlider.params.slidesPerView = 1.5;
+		reviews_slider.params.slidesPerView = 2;
+	}
+
+	if (width >= 1024 && width < 1280) {
+		routeDescriptionSlider.params.slidesPerView = 1.5;
+		reviews_slider.params.slidesPerView = 1.5;
+	}
+
+	if (width >= 768 && width < 1024) {
+		routeDescriptionSlider.params.slidesPerView = width / 413;
+		reviews_slider.params.slidesPerView = 1.2;
+	}
+
+	if (width >= 480 && width < 768) {
+		routeDescriptionSlider.params.slidesPerView = width / 413;
+		reviews_slider.params.slidesPerView = 1;
+
+	}
+
+	if (width >= 320 && width < 480) {
+		routeDescriptionSlider.params.slidesPerView = 1;
+		reviews_slider.params.slidesPerView = 1.3;
+
+	}
+
+	if (width < 320) {
+		routeDescriptionSlider.params.slidesPerView = 1;
+	}
+
+	// базовые действия
+	routeDescriptionSlider.update();
+};
+
+
