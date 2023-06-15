@@ -1015,7 +1015,7 @@ a {
     font-size: 8px;
   }
   .types_of_excursions-tabs .tabs .tabs_list {
-    width: 290px;
+    width: 250px;
   }
   .small_filter .small_filter-form {
     flex-wrap: wrap;
@@ -1032,7 +1032,7 @@ a {
   }
   .excursion_main .our_tours .tour_cards .tour_card {
     flex-direction: column;
-    width: 290px;
+    width: 99%;
     gap: 16px;
   }
   .excursion_main .our_tours .tour_cards .tour_card .tour-img {
