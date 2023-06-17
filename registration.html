@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/registration.css">
 
     <title>Document</title>
 </head>
@@ -28,26 +28,31 @@
             </div>
             <div class="main">
                 <div class="main_header">
-                    Войти
+                    Регистрация
                 </div>
             </div>
         </div>
     </header>
-    <section class="login container">
-        <form class="login_form" action="">
+    <section class="registration container">
+        <form class="registration_form" action="">
             <div class="username form_el">
                 <input required class="username-input" type="text" placeholder="Имя пользователья">
             </div>
+            <div class="email form_el">
+                <input required class="email-input" type="email" placeholder="Электронная почта">
+            </div>
             <div class="password form_el">
                 <input required class="password-input" type="password" placeholder="Пароль">
-                <a class="forgot_password" href="">Забыли пароль?</a>
+            </div>
+            <div class="password_duplicate form_el">
+                <input required class="password_duplicate-input" type="password" placeholder="Подтвердите пароль">
             </div>
             
-            <button class="login_btn" type="submit">Войти</button>
+            <button class="registration_btn" type="submit">Зарегистрироваться</button>
         </form>
-        <div class="registration_link">
-            <span>Вы у нас впервые?</span>
-            <a href="">Регистрация</a>
+        <div class="login_link">
+            <span>Вы уже авторизованы?</span>
+            <a href="">Войти</a>
         </div>
     </section>
     <footer class="footer container">
